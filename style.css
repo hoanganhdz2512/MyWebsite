@@ -1,35 +1,60 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
     color: #222;
     margin: 0;
     padding: 0;
 }
 
-h1 {
-    color: #3366cc;
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 32px rgba(51,102,204,0.08);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(90deg, #3366cc 60%, #5f9ea0 100%);
+    padding: 32px 0 16px 0;
     text-align: center;
-    margin-top: 40px;
+}
+
+h1 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    font-size: 2.5em;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 4px #ccc;
+    text-shadow: 2px 2px 8px #5f9ea0;
+}
+
+main {
+    padding: 32px 24px;
 }
 
 p {
-    max-width: 600px;
-    margin: 20px auto;
-    font-size: 1.1em;
-    line-height: 1.6;
-    text-align: justify;
-    background: #fff;
-    padding: 16px 24px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    font-size: 1.15em;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    color: #333;
+}
+
+footer {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 18px 0;
+    font-size: 1em;
+    color: #888;
 }
 
 @media (max-width: 700px) {
-    p {
-        padding: 12px 8px;
-        font-size: 1em;
+    .container {
+        margin: 12px;
+    }
+    main {
+        padding: 16px 8px;
     }
     h1 {
         font-size: 1.5em;
